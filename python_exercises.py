@@ -17,10 +17,10 @@ for num in range(1, 100):
 
 #Take in a users input for their age, if they are younger than 18 print kids, if they're 18 to 65 print adults, else print seniors
 age_query = input("What is your age?")
-print(age_query)
+age_query = int(age_query)
 
-if i > 18:
-    if i < 65:
+if age_query > 18:
+    if age_query < 65:
         print("Adults")
     else:
         print("Seniors")
